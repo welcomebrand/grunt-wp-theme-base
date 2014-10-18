@@ -1,0 +1,21 @@
+/*!
+Theme Name: Grunt Test
+Description: A Sass build of the Barebones WordPress base theme.
+Author: James Young (@welcomebrand)
+Author URI: http://welcomebrand.co.uk;
+Version: 1.0
+*/
+
+@import
+	// "settings/debug",
+
+	"settings/reset",
+	"settings/settings",
+	"settings/variables",
+	"settings/misc",
+	"settings/typography",
+
+	"externals/pushy", // Slide in, off canvas nav
+	"externals/headroom", // Header bar show / hide
+
+	"layout/layout";
