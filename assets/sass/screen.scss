@@ -6,12 +6,15 @@ Author URI: http://welcomebrand.co.uk;
 Version: 1.0
 */
 
+// As it's WordPress, we compile to the root folder style.css
+
 @import
 	// "settings/debug",
 
 	"settings/reset",
 	"settings/settings",
 	"settings/variables",
+	"settings/animation",
 	"settings/misc",
 	"settings/typography",
 
