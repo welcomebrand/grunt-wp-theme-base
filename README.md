@@ -5,7 +5,6 @@
 It's assumed you've already got Ruby and Sass installed. If you haven't, get them installed first along with:
 
 * Node.js and Grunt (see above)
-* [Imagemagick](http://www.imagemagick.org/script/install-source.php)
 
 ##It's now Grunt powered
 
@@ -45,7 +44,3 @@ Sass so just add un-prefixed properties and if they're needed it's taken care of
 **SVG fallbacks to PNG**
 
 If you create any SVG assets for the project - icons etc, save them to /assets/images/svg/ and Grunt will generate a PNG version of the same size to use as a fallback in your CSS.
-
-**Favicon generation**
-
-If you save a decent quality (ie. One that will scale down well) logo in /assets/images/ and call it favicon.png Grunt will generate Apple and Windows favicons for use and save them out with the relevant file names in the root directory of the site.

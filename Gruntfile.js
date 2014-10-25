@@ -40,24 +40,6 @@ module.exports = function(grunt) {
         }
         ,
 
-        // Generate all required favicons from favicon.png file
-        favicons: {
-            options: {
-                trueColor: true,
-                precomposed: true,
-                appleTouchBackgroundColor: "#ffffff",
-                coast: true,
-                windowsTile: true,
-                tileBlackWhite: false,
-                tileColor: "auto"
-            },
-            icons: {
-                src: 'assets/images/favicon.png',
-                dest: ''
-            }
-        }
-        ,
-
         // Create fallback PNG's from any SVG files
         svg2png: {
             all: {
@@ -112,20 +94,6 @@ module.exports = function(grunt) {
         }
         ,
 
-        // Run PerfBudget checker over the site
-        perfbudget: {
-          default: {
-            options: {
-              url: 'PUBLIC SITE URL',
-              key: 'db8137cdafb84d36b02778d325a9d5ff',
-              budget: {
-                SpeedIndex: '1500'
-              }
-            }
-          }
-        }
-        ,
-
         // Monitor these files for any changes
         watch: {
             scripts: {
@@ -150,15 +118,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks("grunt-modernizr");
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-favicons');
     grunt.loadNpmTasks('grunt-svg2png');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-perfbudget');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Where we tell Grunt what to do when we type "grunt" into the terminal (register them in the order we want them to run).
-    grunt.registerTask('default', ['concat', 'modernizr', 'uglify', 'favicons', /*'svg2png',*/ 'imagemin', 'autoprefixer', 'sass', 'watch']);
+    grunt.registerTask('default', ['concat', 'modernizr', 'uglify', 'svg2png', 'imagemin', 'autoprefixer', 'sass', 'watch']);
 
 };
