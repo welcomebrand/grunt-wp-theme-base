@@ -1,3 +1,9 @@
+***Please note: I no longer actively support this theme*** 
+
+You are more than welcome to continue using it and making changes if you wish but due to time commitments and general lack of WordPress use in my current work it's not something I can help with if any issues arise. 
+
+Thanks!
+
 #Using the Starter Kit
 
 ##Things you need to install
